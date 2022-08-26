@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz@6..96&family=Lexend+Zetta:wght@200;300;400;500&family=Montserrat:ital,wght@0,200;0,300;0,400;1,200;1,300;1,400&family=Roboto:ital,wght@0,100;0,300;1,100;1,300&display=swap");
+.nav-list {
+  display: flex;
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+.link.nav-link {
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
+
+.main-nav {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  z-index: 600;
+  width: 6%;
+  height: 100vh;
+  padding-top: 5%;
+  padding-bottom: 30px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+}
+.main-nav .nav-list {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: 6%;
+  height: 100vh;
+}
+.main-nav .nav-list .nav-item {
+  transform: rotate(-90deg);
+  margin-bottom: 40px;
+  -webkit-box-flex: 0;
+  flex: 0 auto;
+}
+.main-nav .nav-list .nav-item .nav-link {
+  display: inline-flex;
+}
+.main-nav .line {
+  width: 1px;
+  height: 100px;
+  margin-top: 10px;
+  margin-bottom: 80px;
+  margin-left: 10px;
+  background-color: #1a1919;
+}
+
+.lang-nav {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.lang-nav .nav-list .nav-item {
+  margin-inline-end: 20px;
+}
+
+.intro {
+  height: 100vh;
+}
+.intro .container {
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: flex-end;
+}
+.intro .container .description {
+  font-size: 4rem;
+  font-weight: 200;
+  margin-top: 0;
+  margin-bottom: 40px;
+}
+.intro .container .section-link {
+  display: inline-block;
+  margin-bottom: 15px;
+}
+.intro .container .section-link .instruction {
+  font-size: 1.25rem;
+  font-weight: 200;
+}
+.intro .container .arrow-container {
+  display: flex;
+}
+.intro .container .arrow-container .arrow {
+  height: 1px;
+  width: 75px;
+  background-color: rgba(26, 25, 25, 0.8274509804);
+  transition: ease-in-out 350ms;
+}
+.intro .container .arrow-container .arrow.center {
+  width: 50px;
+}
+.intro .container .arrow-container .arrow.active.left {
+  transform: rotate(45deg) translateX(1rem) translateY(-0.25rem);
+  width: 50%;
+}
+.intro .container .arrow-container .arrow.active.center {
+  transform: rotate(-90deg);
+}
+.intro .container .arrow-container .arrow.active.right {
+  transform: rotate(-45deg) translateX(-1rem) translateY(-0.25rem);
+  width: 50%;
+}
+
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #eee1e4;
+}
+
+h1 {
+  font-family: "Bodoni Moda", serif;
+  font-optical-sizing: auto;
+  font-size: 10.5REM;
+  font-weight: 400;
+  margin: 15px 0;
+}
+
+h2 {
+  font-family: "Bodoni Moda", serif;
+  font-optical-sizing: auto;
+  font-size: 9REM;
+  font-weight: 400;
+}
+
+.secondary-font {
+  font-family: "Montserrat", sans-serif;
+}
+
+.hidden {
+  display: none;
+}
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,53 @@
+.intro{
+    height: 100vh;
+    .container{
+        height: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: flex-end;
+        .description{
+            font-size: 4rem;
+            font-weight: 200;
+            margin-top: 0;
+            margin-bottom: 40px;
+        }
+        .section-link{
+            display: inline-block;
+            margin-bottom: 15px;
+            .instruction{
+                font-size: 1.25rem;
+                font-weight: 200;
+            }
+        }
+        .arrow-container{
+            display: flex;
+            .arrow{
+                height: 1px;
+                width: 75px;
+                background-color: #1a1919d3;
+                transition: ease-in-out 350ms;
+                &.center{
+                    width: 50px
+                }
+
+                &.active{
+                    &.left{
+                        transform: rotate(45deg) translateX(1rem)translateY(-0.25rem);
+                        width: 50%;
+                    }
+                    &.center{
+                        //width: 60%;
+                        transform: rotate(-90deg) /*translateX(-1.8px)*/;
+                        
+                    }
+                    &.right{
+                        transform: rotate(-45deg) translateX(-1rem) translateY(-0.25rem);
+                        width: 50%;
+                    }
+                }
+            }
+        }
+    }
+}

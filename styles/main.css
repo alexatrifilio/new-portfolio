@@ -5,7 +5,7 @@
 
 body {
   margin: 0;
-  background-color: #eee1e4;
+  background-color: #eee7e1;
 }
 
 h1 {
@@ -19,8 +19,14 @@ h1 {
 h2 {
   font-family: "Bodoni Moda", serif;
   font-optical-sizing: auto;
-  font-size: 9REM;
+  font-size: 8REM;
   font-weight: 400;
+  text-transform: uppercase;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
 .secondary-font {
@@ -38,6 +44,7 @@ h2 {
 }
 .section .section-content {
   width: 50%;
+  font-family: "Montserrat", sans-serif;
 }
 .section .section-content.works-content {
   display: flex;
@@ -69,6 +76,10 @@ h2 {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+.none {
+  display: none;
 }
 
 .nav-list {

@@ -34,7 +34,7 @@ var cardCreator = function (_a, append) {
     cardTitle.classList.add('title');
     cardTitle.appendChild(document.createTextNode(project));
     var cardDescription = document.createElement('p');
-    cardDescription.classList.add('description', 'min-description');
+    cardDescription.classList.add('description', 'min-description', 'none');
     cardDescription.appendChild(document.createTextNode(description));
     cardDescription.setAttribute('id', 'card-description');
     var btnRepo = document.createElement('a');

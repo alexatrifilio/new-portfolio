@@ -41,7 +41,7 @@ const cardCreator = ({id, project, description, repository, deploy }: Data, appe
         cardTitle.classList.add('title');
         cardTitle.appendChild(document.createTextNode(project));
         const cardDescription = document.createElement('p');
-        cardDescription.classList.add('description', 'min-description');
+        cardDescription.classList.add('description', 'min-description', 'none');
         cardDescription.appendChild(document.createTextNode(description));
         cardDescription.setAttribute('id', 'card-description');
         const btnRepo = document.createElement('a');

@@ -1,0 +1,13 @@
+.card{
+    border: 1px solid $secondary-colour;
+    border-radius: 30px;
+    margin: 5px 5px;
+    width: calc(50% - 10px);
+    padding: 20px;
+
+    .title{
+        font-family: $primary-font;
+        font-optical-sizing: auto;
+        font-size: 2REM;
+    }
+}

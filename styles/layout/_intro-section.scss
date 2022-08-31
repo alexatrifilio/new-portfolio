@@ -1,6 +1,6 @@
 .intro{
     height: 100vh;
-    .container{
+    .container-intro{
         height: 90%;
         display: flex;
         flex-direction: column;
@@ -27,7 +27,7 @@
                 height: 1px;
                 width: 75px;
                 background-color: #1a1919d3;
-                transition: ease-in-out 350ms;
+                transition: ease-in-out 450ms;
                 &.center{
                     width: 50px
                 }
@@ -45,6 +45,22 @@
                     &.right{
                         transform: rotate(-45deg) translateX(-1rem) translateY(-0.25rem);
                         width: 50%;
+                    }
+                }
+
+                &.inactive{
+                    &.left{
+                        transform: rotate(0deg) translateX(0rem)translateY(0rem);
+                        width: 75px;
+                    }
+                    &.center{
+                        //width: 60%;
+                        transform: rotate(0deg) /*translateX(-1.8px)*/;
+                        
+                    }
+                    &.right{
+                        transform: rotate(0deg) translateX(0rem) translateY(0rem);
+                        width: 75px;
                     }
                 }
             }

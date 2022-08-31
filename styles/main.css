@@ -1,4 +1,76 @@
 @import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz@6..96&family=Lexend+Zetta:wght@200;300;400;500&family=Montserrat:ital,wght@0,200;0,300;0,400;1,200;1,300;1,400&family=Roboto:ital,wght@0,100;0,300;1,100;1,300&display=swap");
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #eee1e4;
+}
+
+h1 {
+  font-family: "Bodoni Moda", serif;
+  font-optical-sizing: auto;
+  font-size: 10.5REM;
+  font-weight: 400;
+  margin: 15px 0;
+}
+
+h2 {
+  font-family: "Bodoni Moda", serif;
+  font-optical-sizing: auto;
+  font-size: 9REM;
+  font-weight: 400;
+}
+
+.secondary-font {
+  font-family: "Montserrat", sans-serif;
+}
+
+.hidden {
+  display: none;
+}
+
+.section {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+.section .section-content {
+  width: 50%;
+}
+.section .section-content.works-content {
+  display: flex;
+  flex-wrap: wrap;
+}
+.section .section-name {
+  width: 50%;
+}
+.section .section-name .section-title.right.hover-title {
+  transform: translateX(25px) skewY(3deg);
+  transition: transform 350ms ease-out;
+}
+.section .section-name .section-title.right.return-title {
+  transform: translateX(-25px);
+  transition: transform 350ms ease-out;
+}
+.section .section-name .section-title.left.hover-title {
+  transform: translateX(-25px) skewY(-3deg);
+  transition: transform 350ms ease-out;
+}
+.section .section-name .section-title.left.return-title {
+  transform: translateX(25px);
+  transition: transform 350ms ease-out;
+}
+
+.container {
+  margin: auto;
+  max-width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .nav-list {
   display: flex;
   list-style: none;
@@ -60,10 +132,17 @@
   margin-inline-end: 20px;
 }
 
+.about .section-name {
+  display: flex;
+}
+.about .section-name .section-title {
+  justify-content: flex-end;
+}
+
 .intro {
   height: 100vh;
 }
-.intro .container {
+.intro .container-intro {
   height: 90%;
   display: flex;
   flex-direction: column;
@@ -71,74 +150,66 @@
   text-align: center;
   justify-content: flex-end;
 }
-.intro .container .description {
+.intro .container-intro .description {
   font-size: 4rem;
   font-weight: 200;
   margin-top: 0;
   margin-bottom: 40px;
 }
-.intro .container .section-link {
+.intro .container-intro .section-link {
   display: inline-block;
   margin-bottom: 15px;
 }
-.intro .container .section-link .instruction {
+.intro .container-intro .section-link .instruction {
   font-size: 1.25rem;
   font-weight: 200;
 }
-.intro .container .arrow-container {
+.intro .container-intro .arrow-container {
   display: flex;
 }
-.intro .container .arrow-container .arrow {
+.intro .container-intro .arrow-container .arrow {
   height: 1px;
   width: 75px;
   background-color: rgba(26, 25, 25, 0.8274509804);
-  transition: ease-in-out 350ms;
+  transition: ease-in-out 450ms;
 }
-.intro .container .arrow-container .arrow.center {
+.intro .container-intro .arrow-container .arrow.center {
   width: 50px;
 }
-.intro .container .arrow-container .arrow.active.left {
+.intro .container-intro .arrow-container .arrow.active.left {
   transform: rotate(45deg) translateX(1rem) translateY(-0.25rem);
   width: 50%;
 }
-.intro .container .arrow-container .arrow.active.center {
+.intro .container-intro .arrow-container .arrow.active.center {
   transform: rotate(-90deg);
 }
-.intro .container .arrow-container .arrow.active.right {
+.intro .container-intro .arrow-container .arrow.active.right {
   transform: rotate(-45deg) translateX(-1rem) translateY(-0.25rem);
   width: 50%;
 }
-
-*, *::after, *::before {
-  box-sizing: border-box;
+.intro .container-intro .arrow-container .arrow.inactive.left {
+  transform: rotate(0deg) translateX(0rem) translateY(0rem);
+  width: 75px;
+}
+.intro .container-intro .arrow-container .arrow.inactive.center {
+  transform: rotate(0deg);
+}
+.intro .container-intro .arrow-container .arrow.inactive.right {
+  transform: rotate(0deg) translateX(0rem) translateY(0rem);
+  width: 75px;
 }
 
-body {
-  margin: 0;
-  background-color: #eee1e4;
+.card {
+  border: 1px solid #1a1919;
+  border-radius: 30px;
+  margin: 5px 5px;
+  width: calc(50% - 10px);
+  padding: 20px;
 }
-
-h1 {
+.card .title {
   font-family: "Bodoni Moda", serif;
   font-optical-sizing: auto;
-  font-size: 10.5REM;
-  font-weight: 400;
-  margin: 15px 0;
-}
-
-h2 {
-  font-family: "Bodoni Moda", serif;
-  font-optical-sizing: auto;
-  font-size: 9REM;
-  font-weight: 400;
-}
-
-.secondary-font {
-  font-family: "Montserrat", sans-serif;
-}
-
-.hidden {
-  display: none;
+  font-size: 2REM;
 }
 
 /*# sourceMappingURL=main.css.map */
